@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Voyage en Haïti</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="logo"> <span>voyage</span>en haiti</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Gallerie.html">Gallerie</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="CreateTrip.html" id="open-create-trip" class="btn">faite creer votre voyage</a>
+        </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop()
+        .toLowerCase();
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+        const href = link.getAttribute("href").toLowerCase();
+
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+
+
+    </header>
+
+
+
+    <!-- home premiere section commencement-->
+    <section class="home" id="home">
+
+        <div class="icons home-right">
+            <div class="search-box" id="search">
+                <input type="text" placeholder="Où souhaitez-vous partir ?">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="content">
+                <h3>Decouvrez les merveilles d'haiti </h3>
+                <h1> welcome to haiti</h1>
+                <p>Decouvrir nos plage et nos lieu touristique evec nous</p>
+                <a href="#gallerie" class="bnt">explorer plus</a>
+            </div>
+
+
+            <div class="controls" aria-label="Choisir une vidéo">
+                <span class="vid-btn active" data-src="images/video G.mp4" title="Vidéo 1"></span>
+                <span class="vid-btn" data-src="images/video1.mp4" title="Vidéo 2"></span>
+                <span class="vid-btn" data-src="images/video G3.mp4" title="Vidéo 3"></span>
+                <span class="vid-btn" data-src="images/video3.mp4" title="Vidéo 4"></span>
+                <span class="vid-btn" data-src="images/video4.mp4" title="Vidéo 5"></span>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video src="images/video G.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+<section class="gallery" id="gallery-centre">
+        <h1 class="heading">
+            <span>G</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>E</span>
+            <span>R</span>
+            <span>I</span>
+            <span>E</span>
+     </h1>
+        <div class="titre">
+            <h3>les plus belle endroits de la caraibe</h3>
+            <p>Quelques lieux incontournables en Haïti .</p>
+             <h1>centre</h1>
+        </div>
+
+        <div class="box-container">
+
+
+            <div class="box">
+               
+                <img src="images/departement centre/bassin zim.jpg" alt="Bassin Zim dans le département du Centre, Haïti">
+                <div class="content">
+<h3>Bassin Zim</h3>
+                    <p>Un bassin naturel au cœur du département du Centre : eaux paisibles, verdure environnante et une ambiance idéale pour se détendre.</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement centre/royal hotel.jpg" alt="Royal Hotel dans le département du Centre, Haïti">
+                <div class="content">
+                    <h3>Royal Hotel</h3>
+                    <p>Un séjour confortable dans un hôtel au cœur du département du Centre : accueil chaleureux, chambres agréables et accès facile aux environs.</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement centre/lac peligre(2).jpg" alt="">
+                <div class="content">
+<h3>Lac Peligre</h3>
+                    <p>Un grand lac artificiel au cœur du Centre, idéal pour admirer les paysages et découvrir la région.</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement centre/beau rivage.jpg" alt="">
+                <div class="content">
+                    <h3>Beau Rivage</h3>
+                    <p>Profitez d’un cadre paisible au bord de l’eau, idéal pour une balade relaxante et des moments en famille.</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement centre/saut d'eau.jpg" alt="">
+                <div class="content">
+                    <h3>Saut d’Eau</h3>
+                    <p>Une cascade spectaculaire entourée de verdure, parfaite pour la randonnée, la baignade et les photos.</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement centre/barage peligre.jpg" alt="">
+                <div class="content">
+                    <h3>Barrage Peligre</h3>
+                    <p>Un paysage impressionnant autour du barrage et du lac : détente en bord d’eau et vues panoramiques.</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+        </div>
+
+</section>
+
+
+
+<section class="gallery" id="gallery-artibonite">
+
+        
+        <div class="titre">
+          
+             <h1>departement l'artibonite</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/departement de l'aribonite/hotels.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement de l'aribonite/moulin.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement de l'aribonite/plage1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/departement de l'aribonite/jeffel hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement de l'aribonite/royal decameroune indigo.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement de l'aribonite/plage de montrouis.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+<section class="gallery" id="gallery-grand-anse">
+        
+        <div class="titre">
+          
+             <h1>departement la grand-anse</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/departement grand-anse/residence royal hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement grand-anse/jeremie1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement grand-anse/jeremie.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+               
+                <img src="images/departement grand-anse/macaya.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement grand-anse/plage jeremie.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement grand-anse/plage grand-anse.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+</section>
+
+
+
+
+<section class="gallery" id="gallery-nord">
+        
+        <div class="titre">
+          
+             <h1>departement du nord</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/nord/labadee2.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/nord/montage .avif" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/nord/citadelle laferiere.avif" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/nord/labadee3.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/nord/illes .avif" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/nord/labadee4.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+<section class="gallery" id="gallery-nord-est">
+        
+        <div class="titre">
+          
+             <h1>departement nord-est</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/departement nord d'est/caracol3.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nord d'est/fort liberte.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nord d'est/metro residence hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+               
+                <img src="images/departement nord d'est/imperiel hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nord d'est/trou du nord.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nord d'est/caracol2.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+<section class="gallery" id="gallery-ouest">
+        
+        <div class="titre">
+          
+             <h1>departement de l'ouest</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/ouest/ouasis hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/ouest/hilton hotels.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/ouest/kinam hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/ouest/l'ile de la region.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/ouest/ouest paysage.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/ouest/Lebon hotel.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+<section class="gallery" id="gallery-nippes">
+        
+        <div class="titre">
+          
+             <h1>departement de nippes</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/departement nippes/ile macaya.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nippes/hotel mira.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nippes/petit trou de nippes.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/departement nippes/anse a veau(1).jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nippes/source hotels.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nippes/plage de miragoane.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+<section class="gallery" id="gallery-sud">
+        
+        <div class="titre">
+          
+             <h1>departement du sud</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/sud/hotel clivadier.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/sud/plage de la cote d'azur.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/sud/nos hotels.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/sud/plage du sud.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/sud/hotel des cayes.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/sud/flo.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+<section class="gallery" id="gallery-nord-ouest">
+        
+        <div class="titre">
+          
+             <h1>departement nord-ouest</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+               
+                <img src="images/departement nord-ouest/hotel mont jlie.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nord-ouest/ile de la tortue.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nord-ouest/pardis hotell.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+               
+                <img src="images/departement nord-ouest/ile de la tortue1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+             <div class="box">
+                <img src="images/departement nord-ouest/mole saint nicoles.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+
+             <div class="box">
+                <img src="images/departement nord-ouest/port de paix.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa illum. Rerum libero hic
+                        velit cum dicta qui ex eos laborum voluptas! Illo magnam
+                        modi fugiat at doloremque nemo sapiente!</p>
+                    <a href="#" class="btn">explore plus</a>
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+ <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <h1 class="logo">voyage</h1>
+            <h4>Contact</h4>
+            <p><strong>Adresse:</strong> Thomonde Rue Bladelone (de Simetiere)</p>
+            <p><strong>Téléphone:</strong> 33688472 / 44568909</p>
+            <p><strong>Heure:</strong> Tous les jours de la semaine de 7h à 16h</p>
+
+            <div class="follow">
+                <h4>Rejoignez-nous sur les réseaux</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-bar">
+            <h4>a propos</h4>
+            <a href="About.html"> a propos de nous</a>
+            <a href="index.html"> votre voyage en toute securite</a>
+            <a href="Gallerie.html">le plus belle endroit haiti</a>
+            <a href="apropos.html"> term et condition</a>
+            <a href="contact.html">contacter nous</a>
+
+
+        </div>
+
+        <div class="col-bar">
+            <h4>my account</h4>
+            <a href="contact.html"> sing in</a>
+            <a href="#service"> nos service</a>
+            <a href="#destinations"> voyager avec nous</a>
+            <a href="CreateTrip.html">faire mon reservation</a>
+            <a href="apropos de nous">help</a>
+
+
+        </div>
+
+        <div class="col-install">
+            <h4>Installer l'application</h4>
+            <p>Depuis App Store ou Google Play</p>
+            <div class="row">
+                <img src="images/icon.jpg" alt="">
+            </div>
+            <p>Paiement sécurisé</p>
+            <img src="images/icon5.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 voyage - Tous droits réservés</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Voyage en Haïti</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- Font Awesome (icônes) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="logo"> <span>voyage</span>en haiti</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Gallerie.html">Gallerie</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="CreateTrip.html" id="open-create-trip" class="btn">faite creer votre voyage</a>
+        </div>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop()
+        .toLowerCase();
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+        const href = link.getAttribute("href").toLowerCase();
+
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+        
+    </header>
+
+
+ <!-- home premiere section commencement-->
+    <section class="home" id="home">
+
+         <div class="icons home-right">
+            <div class="search-box" id="search">
+                <input type="text" placeholder="Où souhaitez-vous partir ?">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        <div class="content">
+            <h3>Decouvrez les merveilles d'haiti </h3>
+            <h1> welcome to haiti</h1>
+            <p>Decouvrir nos plage et nos lieu touristique evec nous</p>
+            <a href="Gallerie.html" class="bnt">explorer plus</a>
+        </div>
+
+
+        <div class="controls" aria-label="Choisir une vidéo">
+                <span class="vid-btn active" data-src="images/video1.mp4" title="Vidéo 1"></span>
+                <span class="vid-btn" data-src="images/video5.mp4" title="Vidéo 2"></span>
+                <span class="vid-btn" data-src="images/video2.mp4" title="Vidéo 3"></span>
+                <span class="vid-btn" data-src="images/video3.mp4" title="Vidéo 4"></span>
+                <span class="vid-btn" data-src="images/video4.mp4" title="Vidéo 5"></span>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video src="images/video1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h3>Contactez-nous</h3>
+<h1>On vous aide à préparer votre voyage en Haïti</h1>
+            <p>Réservez, posez vos questions, ou demandez un itinéraire sur mesure.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Nos informations</h2>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Adresse</h4>
+                        <p>Thomonde, Haïti</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Téléphone</h4>
+                        <p>+509 00 00 00 00</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>contact@voyagehaiti.com</p>
+                    </div>
+                </div>
+
+                <div class="info-hours">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Lun - Sam : 9h - 18h</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envoyer un message</h2>
+
+                <form id="contactForm">
+                    <div class="field">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" class="input" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="vous@example.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="input" placeholder="Ex: réservation / itinéraire" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="input" rows="6" placeholder="Écrivez votre demande..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                    <p class="form-note">Envoi simulé (pas de backend). Vous verrez un message de confirmation.</p>
+                </form>
+
+                <div id="formResult" class="form-result" aria-live="polite"></div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <h1 class="logo">voyage</h1>
+            <h4>Contact</h4>
+            <p><strong>Adresse:</strong> Thomonde Rue Bladelone (de Simetiere)</p>
+            <p><strong>Téléphone:</strong> 33688472 / 44568909</p>
+            <p><strong>Heure:</strong> Tous les jours de la semaine de 7h à 16h</p>
+
+            <div class="follow">
+                <h4>Rejoignez-nous sur les réseaux</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-bar">
+            <h4>a propos</h4>
+            <a href="About.html"> a propos de nous</a>
+            <a href="index.html"> votre voyage en toute securite</a>
+            <a href="Gallerie.html">le plus belle endroit haiti</a>
+            <a href="apropos.html"> term et condition</a>
+            <a href="contact.html">contacter nous</a>
+
+
+        </div>
+
+        <div class="col-bar">
+            <h4>my account</h4>
+            <a href="contact.html"> sing in</a>
+            <a href="#service"> nos service</a>
+            <a href="#destinations"> voyager avec nous</a>
+            <a href="CreateTrip.html">faire mon reservation</a>
+            <a href="apropos de nous">help</a>
+
+
+        </div>
+
+        <div class="col-install">
+            <h4>Installer l'application</h4>
+            <p>Depuis App Store ou Google Play</p>
+            <div class="row">
+                <img src="images/icon.jpg" alt="">
+            </div>
+            <p>Paiement sécurisé</p>
+            <img src="images/icon5.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 voyage - Tous droits réservés</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="app.js"></script>
+   
+</body>
+
+</html>
+

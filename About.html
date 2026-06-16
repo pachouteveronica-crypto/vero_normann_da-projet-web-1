@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Voyage en Haïti</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+        <a href="#" class="logo"> <span>voyage</span> en haiti</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Gallerie.html">Gallerie</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="CreateTrip.html" id="open-create-trip" class="btn">faite creer votre voyage</a>
+        </div>
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop()
+        .toLowerCase();
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+        const href = link.getAttribute("href").toLowerCase();
+
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+
+       
+    </header>
+
+    
+   <!-- home premiere section commencement-->
+    <section class="home" id="home">
+
+         <div class="icons home-right">
+            <div class="search-box" id="search">
+                <input type="text" placeholder="Où souhaitez-vous partir ?">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        <div class="content">
+            <h3>Decouvrez les merveilles d'haiti </h3>
+            <h1> welcome to haiti</h1>
+            <p>Decouvrir nos plage et nos lieu touristique evec nous</p>
+            <a href="Gallerie.html" class="bnt">explorer plus</a>
+        </div>
+
+
+        <div class="controls" aria-label="Choisir une vidéo">
+                <span class="vid-btn active" data-src="images/video E.mp4" title="Vidéo 1"></span>
+                <span class="vid-btn" data-src="images/video1.mp4" title="Vidéo 2"></span>
+                <span class="vid-btn" data-src="images/video E2.mp4" title="Vidéo 3"></span>
+                <span class="vid-btn" data-src="images/video3.mp4" title="Vidéo 4"></span>
+                <span class="vid-btn" data-src="images/video4.mp4" title="Vidéo 5"></span>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video src="images/video E.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="about">
+        <div class="hero-content">
+            <div class="hero-badge">Voyage en Haïti</div>
+            <h3>À propos</h3>
+            <h1>Plages, montagnes & patrimoine</h1>
+            <p>Une plateforme pensée pour te guider : plages, montagnes, patrimoine et expériences authentiques à travers toute l’île.</p>
+        </div>
+
+
+        <div class="contact-grid" style="grid-template-columns: 1fr 1fr;">
+            <div class="contact-info">
+                <h2>Notre mission</h2>
+                <div class="info-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <div>
+                        <h4>Inspirer</h4>
+                        <p>Te donner envie de découvrir Haïti avec des idées concrètes : plages, montagnes, patrimoine et moments authentiques.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-route"></i>
+                    <div>
+                        <h4>Guider</h4>
+                        <p>Te proposer des itinéraires simples, clairs et faciles à suivre—pour voyager sereinement, étape par étape.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Ce que tu trouveras</h2>
+                <div class="info-item">
+                    <i class="fa-solid fa-images"></i>
+                    <div>
+                        <h4>Galerie</h4>
+                        <p>Des images réalistes pour te projeter avant de partir (et choisir ton mood).</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Contact</h4>
+                        <p>Une page pour nous écrire, demander un conseil, ou ajuster ton voyage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sections au milieu : d’abord l’émotion, ensuite la méthode -->
+        <div class="about-mid-grid">
+            <div class="about-card">
+                <div class="about-card-header">
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>Les moments à vivre</h2>
+                </div>
+
+                <p class="about-card-text">
+                    Haïti, c’est plus que des lieux : c’est une énergie. On t’embarque pour des souvenirs qui restent—des paysages incroyables, des saveurs locales et une vraie rencontre avec le pays.
+                </p>
+
+                <div class="about-badges">
+                    <div class="about-badge">
+                        <i class="fa-solid fa-water"></i>
+                        <h4>Plages & lagons</h4>
+                        <p>Eaux claires, sable doux et détente.</p>
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-mountain"></i>
+                        <h4>Montagnes & nature</h4>
+                        <p>Routes, points de vue et fraîcheur.</p>
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h4>Patrimoine</h4>
+                        <p>Histoire vivante, culture et fierté.</p>
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h4>Goûter Haïti</h4>
+                        <p>Saveurs locales à chaque étape.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-header">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h2>Comment on te guide</h2>
+                </div>
+                <p class="about-card-text">
+                    Tu veux un voyage simple ? On t’aide à choisir le bon rythme. Sur notre site, tu peux construire un plan qui correspond à tes envies : détente au bord de l’eau, aventures nature, visites culturelles…
+                </p>
+
+                <div class="about-bullets">
+                    <div class="about-bullet">
+                        <i class="fa-solid fa-sun"></i>
+                        <div>
+                            <h4>Idées par ambiance</h4>
+                            <p>Plage tranquille, road-trip, découverte historique… tu sélectionnes ton style.</p>
+                        </div>
+                    </div>
+                    <div class="about-bullet">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <div>
+                            <h4>Confort & repères</h4>
+                            <p>On te donne des conseils pratiques pour que tu te repères facilement sur place.</p>
+                        </div>
+                    </div>
+                    <div class="about-bullet">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <div>
+                            <h4>Sur mesure</h4>
+                            <p>Tu nous dis ce que tu aimes, et on adapte ton itinéraire pour que ça te ressemble.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <h1 class="logo">voyage</h1>
+            <h4>Contact</h4>
+            <p><strong>Adresse:</strong> Thomonde Rue Bladelone (de Simetiere)</p>
+            <p><strong>Téléphone:</strong> 33688472 / 44568909</p>
+            <p><strong>Heure:</strong> Tous les jours de la semaine de 7h à 16h</p>
+
+            <div class="follow">
+                <h4>Rejoignez-nous sur les réseaux</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-bar">
+            <h4>a propos</h4>
+            <a href="About.html"> a propos de nous</a>
+            <a href="index.html"> votre voyage en toute securite</a>
+            <a href="Gallerie.html">le plus belle endroit haiti</a>
+            <a href="apropos.html"> term et condition</a>
+            <a href="contact.html">contacter nous</a>
+
+
+        </div>
+
+        <div class="col-bar">
+            <h4>my account</h4>
+            <a href="contact.html"> sing in</a>
+            <a href="#service"> nos service</a>
+            <a href="#destinations"> voyager avec nous</a>
+            <a href="CreateTrip.html">faire mon reservation</a>
+            <a href="apropos de nous">help</a>
+
+
+        </div>
+
+        <div class="col-install">
+            <h4>Installer l'application</h4>
+            <p>Depuis App Store ou Google Play</p>
+            <div class="row">
+                <img src="images/icon.jpg" alt="">
+            </div>
+            <p>Paiement sécurisé</p>
+            <img src="images/icon5.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 voyage - Tous droits réservés</p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
