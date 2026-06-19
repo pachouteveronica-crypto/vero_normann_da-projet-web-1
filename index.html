@@ -10,14 +10,14 @@
 
 
 
-    
-   
+
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -29,8 +29,8 @@
         <a href="#" class="logo"> <span>voyage</span> en haiti</a>
 
         <nav class="navbar" aria-label="Main navigation">
-            <a href="index.html" >Home</a>
-            <a href="About.html" >About</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
             <a href="Gallerie.html">Gallerie</a>
             <a href="Contact.html">Contact</a>
         </nav>
@@ -40,22 +40,22 @@
             <a href="CreateTrip.html" id="open-create-trip" class="btn">faite creer votre voyage</a>
         </div>
 
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const currentPage = window.location.pathname
-        .split("/")
-        .pop()
-        .toLowerCase();
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const currentPage = window.location.pathname
+                    .split("/")
+                    .pop()
+                    .toLowerCase();
 
-    document.querySelectorAll(".navbar a").forEach(link => {
-        const href = link.getAttribute("href").toLowerCase();
+                document.querySelectorAll(".navbar a").forEach(link => {
+                    const href = link.getAttribute("href").toLowerCase();
 
-        if (href === currentPage) {
-            link.classList.add("active");
-        }
-    });
-});
-</script>
+                    if (href === currentPage) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        </script>
 
 
 
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <section class="destinations" id="destinations">
 
         <h1>Destinations populaires</h1>
-
+        <h3>voyager en toute confiance, nous nous accupons du reste 🛩️🏞️🏤🍽️ </h3>
         <div class="box-container">
 
             <div class="box">
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>plus grand forterrese de caraibe et et symbole de l'independance haitienne</p>
 
                     <div class="price">$ 800.00 <span>$120.00</span></div>
-                    <a href="Gallerie.html#gallery-nord" class="btn">explore more</a>
+                    <a href="Gallerie.html#gallery-nord" class="btn">explore plus</a>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>plages des sable fin et eaux turquoise ideale pour la detente</p>
 
                     <div class="price">$ 800.00 <span>$120.00</span></div>
-                    <a href="CreateTrip.html" class="btn">book now</a>
+                    <a href="Gallerie.html#gallery-grand-anse" class="btn">explore plus</a>
                 </div>
             </div>
 
@@ -145,11 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="box">
                 <img src="images/departement de l'aribonite/image-montrouis-moulin-sur-mer-beach-resort-4.jpg" alt="">
                 <div class="content">
-                    <h3><i class="fa-solid fa-location-dot">   cayes</i></h3>
+                    <h3><i class="fa-solid fa-location-dot"> cayes</i></h3>
                     <p>le plus grand hotels du sud</p>
 
                     <div class="price">$ 800.00 <span>$120.00</span></div>
-                    <a href="CreateTrip.html" class="btn">book now</a>
+                    <a href="Gallerie.html#gallery-sud" class="btn">explore plus</a>
                 </div>
             </div>
 
@@ -157,11 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="box">
                 <img src="images/departement centre/lac peligre(2).jpg " alt="">
                 <div class="content">
-                    <h3><i class="fa-solid fa-location-dot">   centre</i></h3>
+                    <h3><i class="fa-solid fa-location-dot"> centre</i></h3>
                     <p>barage hydrolique qui founit le courant electrique au pyas</p>
 
                     <div class="price">$ 800.00 <span>$120.00</span></div>
-                    <a href="CreateTrip.html" class="btn">book now</a>
+                    <a href="Gallerie.html#gallery-centre" class="btn">explore plus</a>
                 </div>
             </div>
 
@@ -169,11 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="box">
                 <img src="images/jacmel/bassin bleu1.jpg" alt="">
                 <div class="content">
-                    <h3><i class="fa-solid fa-location-dot">   jacmel</i></i></h3>
+                    <h3><i class="fa-solid fa-location-dot"> jacmel</i></i></h3>
                     <p>magnifique bassin maturels entourer de vegetation naturels</p>
 
                     <div class="price">$ 800.00 <span>$120.00</span></div>
-                    <a href="CreateTrip.html" class="btn">book now</a>
+                    <a href="Gallerie.html#gallery-nord-est" class="btn">explore plus</a>
                 </div>
             </div>
 
@@ -199,61 +199,100 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="box-container">
             <div class="box">
                 <i class="fa fa-bed"></i>
-                <h3>hôtel abordable"</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <h3>hôtel abordable et confortable"</h3>
+                <p> Profitez d'une sélection d'hôtels soigneusement choisis pour leur excellent rapport qualité-prix.
+                    Bénéficiez d'un hébergement confortable, propre et sécurisé sans dépasser votre budget.!</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-utensils"></i>
                 <h3>manger et boirer"</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <p> Découvrez les meilleures saveurs locales et internationales grâce à nos recommandations de
+                    restaurants et cafés. Savourez des repas délicieux et des boissons rafraîchissantes tout au long de
+                    votre séjour.</p>
             </div>
 
 
             <div class="box">
                 <i class="fa-solid fa-user-shield"></i>
                 <h3>guide en tout securite"</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <p> Voyagez l'esprit tranquille avec nos guides expérimentés qui vous accompagnent à chaque étape. Votre
+                    sécurité et votre confort sont notre priorité afin que vous puissiez profiter pleinement de votre
+                    aventure.</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-eye"></i>
                 <h3>visite dans le pays"</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <p> Explorez les plus beaux sites touristiques, les plages paradisiaques, les monuments historiques et
+                    les trésors cachés du pays. Chaque excursion est conçue pour vous offrir une expérience inoubliable.
+                </p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-plane"></i>
-                <h3>voyage rapide et soigner"</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <h3>Voyages organisés, rapides et sans stress"</h3>
+                <p> Nous nous occupons de tous les détails : transport, hébergement, activités et assistance. Gagnez du
+                    temps et profitez d'un voyage parfaitement organisé du départ au retour.</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-compass"></i>
-                <h3>aventure</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi vitae, similique voluptatem
-                    atque nihil quaerat. Blanditiis quasi quis iure numquam laboriosam vitae ipsum! Tenetur
-                    expedita reprehenderit enim veniam deserunt!</p>
+                <h3>Assistance personnalisée 24h/24 et 7j/7</h3>
+                <p>Notre équipe reste disponible avant, pendant et après votre voyage pour répondre à vos questions et
+                    vous aider en cas de besoin. Où que vous soyez, vous pouvez compter sur un accompagnement fiable et
+                    réactif.</p>
             </div>
 
         </div>
 
- </section>
+    </section>
     <!--service section end-->
 
+    <!--review section stars-->
+
+    <div class="review" id="review">
+         <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>V</span>
+            <span>I</span>
+            <span>E</span>
+            <span>W</span>
+           
+        </h1>
 
 
-    
+        <div class="review-slider">
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/" alt="">
+                        <h3>john derose</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio mollitia nihil suscipit
+                            alias vero saepe consectetur asperiores deserunt eius, distinctio, architecto adipisci
+                            explicabo
+                            veniam quibusdam officia. Ipsa, autem odit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--review section end-->
+
+
+
     <!-- Footer -->
     <footer class="section-p1">
         <div class="col">

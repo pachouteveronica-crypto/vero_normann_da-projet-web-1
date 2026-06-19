@@ -486,9 +486,10 @@ header .icons i:hover {
     padding: 80px 10%;
 }
 
-.destinations h2 {
+.destinations h3 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 2.7rem;
 }
 
 
@@ -701,6 +702,128 @@ header .icons i:hover {
         font-size: 1.6rem;
     }
 }
+
+/* Ajouts mobile (Android) pour la page Contact */
+
+@media (max-width: 480px) {
+  .contact {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 10rem;
+
+    
+  }
+
+  .contact .hero-content {
+    padding: 2.2rem 1rem 1.4rem;
+    border-radius: 1.2rem;
+  }
+
+  .contact .content h3 {
+    font-size: 3.0rem;
+  }
+
+  .contact .content h1 {
+    font-size: 2.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .contact .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .contact-grid {
+    padding: 0 0 5rem;
+    gap: 1.6rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 1.6rem;
+    border-radius: 1.1rem;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .info-item {
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .info-item i {
+    font-size: 2.6rem;
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+  }
+
+  .field label {
+    font-size: 1.6rem;
+  }
+
+  .input {
+    padding: 1.1rem 1.2rem;
+    font-size: 1.6rem;
+    min-width: 0;
+  }
+
+  textarea.input {
+    min-height: 10rem;
+  }
+
+  .contact-form .btn {
+    margin-top: 1.2rem;
+  }
+}
+
+
+ /* <!--review section stars--> */
+
+.review .slider{
+    padding-bottom: 2rem;
+
+}
+ .review .box{
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.review .box img{
+    height:13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.review .box h3{
+    color: var(--primary-2);
+    font-size: 2.5rem;
+}
+
+
+.review .box p{
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.review .box .stars i{
+    color: orange;
+    font-size: 1.7rem;
+}
+
+
+
+
 
 
 
