@@ -710,6 +710,7 @@ header .icons i:hover {
     padding-left: 4vw;
     padding-right: 4vw;
     padding-top: 10rem;
+    
 
     
   }
@@ -796,11 +797,13 @@ header .icons i:hover {
 }
 
 .review .box img{
-    height:13rem;
-    width: 13rem;
+    height:20rem;
+    width: 20rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+    margin-left: 5.5rem ;
+   
 }
 
 .review .box h3{
@@ -819,6 +822,12 @@ header .icons i:hover {
 .review .box .stars i{
     color: orange;
     font-size: 1.7rem;
+}
+
+.review h1{
+     font-size: 6rem;
+    color: var(--orange);
+    text-align: center;
 }
 
 

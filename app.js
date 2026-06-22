@@ -124,9 +124,34 @@ if (form && result) {
         const name = nameInput?.value?.trim() || '';
 
         result.classList.remove('error');
-result.textContent = `Merci ${name}! Votre message a été envoyé (simulation).`;
+        result.textContent = `Merci ${name}! Votre message a été envoyé (simulation).`;
 
         result.style.opacity = '1';
         form.reset();
     });
 }
+
+// REVIEW SLIDER (Swiper)
+const reviewEl = document.querySelector('.review-slider');
+if (reviewEl) {
+    const swiper = new Swiper('.review-slider', {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+}
+
